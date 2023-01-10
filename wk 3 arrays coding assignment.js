@@ -30,13 +30,16 @@ ages.reduce((total, current)=> total + current) / ages.length;
 
 //2.	Create an array called names that contains the following values: ‘Sam’, ‘Tommy’, ‘Tim’, ‘Sally’, ‘Buck’, ‘Bob’.
 let theNames = ['Sam', 'Tommy', 'Tim', 'Sally', 'Buck', 'Bob']
+let sum = 0;
 
 //a.	Use a loop to iterate through the array and calculate the average number of letters per name. Print the result to the console.
 for (let i =0; i <= theNames.length-1; i++){
-    sum += theNames[i];
+    console.log(theNames[i].length);
+    sum += theNames[i].lenth;
     console.log(sum/theNames.length);
 }
-console.log(average);
+
+
 
 //b.	Use a loop to iterate through the array again and concatenate all the names together, separated by spaces, and print the result to the console.
 for (let i = 0; i <= theNames.length-1; i++){
